@@ -4,7 +4,11 @@ title: "[데이패스 #1] 주제 제안: 자격증 공부, 하루 한 칸씩"
 date: 2026-11-02
 categories: [project]
 ---
+fisrt of all, let me check if this blog works well!!!
+![블로그 시작 화면](image.png)
 
+
+---
 > 소프트웨어공학(2026-2) 학기 프로젝트 개발일지 첫 번째 글. 무엇을 만들지, 그리고 주제가 어떻게 바뀌었는지 정리한다.
 
 ## 처음 생각한 주제: 우리 학과 취업 로드맵
