@@ -5,7 +5,7 @@ date: 2026-11-02
 categories: [project]
 ---
 fisrt of all, let me check if this blog works well!!!
-![블로그 시작 화면](image.png)
+![블로그 시작 화면](./image.png)
 
 
 ---
