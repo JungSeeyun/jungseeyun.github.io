@@ -36,7 +36,7 @@ fisrt of all, let me check if this blog works well!!!
 
 혼자 고민하는 대신 AI(Claude)와 토론하면서 방향을 잡았다. 한 번에 정해진 게 아니라, 실제로 만들어 보면서 네 번 크게 바뀌었다. (각 단계 제목을 누르면 내용이 펼쳐진다.)
 
-<details markdown="1">
+<details markdown="1" style="margin-bottom: 0.8em;">
 <summary><strong>1차: 자격증 추천 + 상황별 Day 코스</strong></summary>
 
 먼저 새 주제를 거를 기준 세 가지를 세웠다.
@@ -60,7 +60,7 @@ fisrt of all, let me check if this blog works well!!!
 
 </details>
 
-<details markdown="1">
+<details markdown="1" style="margin-bottom: 0.8em;">
 <summary><strong>2차: "내가 만든 공부 계획표, 믿어도 될까?"</strong></summary>
 
 코스를 만들고 나니 이 계획표가 정말 효과적인지 믿음이 가지 않았다. 그래서 듀오링고 같은 학습 앱은 단계를 어떤 기준으로 짜는지, 연구는 뭐라고 하는지 AI와 같이 조사했다.
@@ -84,7 +84,7 @@ fisrt of all, let me check if this blog works well!!!
 
 </details>
 
-<details markdown="1">
+<details markdown="1" style="margin-bottom: 0.8em;">
 <summary><strong>3차: 내 자료(PDF·유튜브)로 코스와 퀴즈를? → 접음</strong></summary>
 
 원래 진짜 하고 싶었던 건 이거였다. 공부할 자료(요약 PDF, 유튜브 강의)를 넣으면 그걸로 Day별 공부 범위를 정하고, 그 내용으로 확인 퀴즈까지 내 주는 것.
@@ -102,7 +102,7 @@ AI는 대안으로 "검증된 무료 강의를 골라 두고 문제 은행을 �
 
 </details>
 
-<details markdown="1">
+<details markdown="1" style="margin-bottom: 0.8em;">
 <summary><strong>4차: 내 일정에 맞춘 공부 스케줄 → 채택</strong></summary>
 
 콘텐츠 없이 개인화할 수 있는 방법을 여러 개 놓고 고민했다. 단원별 자기진단, 내 교재 분량 입력, 밀린 날 다시 짜기, 요일별 공부 시간, 주간 회고 등이다. 그중 대학생에게 가장 현실적인 문제를 골랐다. **수업·알바·근로 때문에 요일마다 공부할 수 있는 시간이 다르다**는 것이다.
