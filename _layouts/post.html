@@ -1,0 +1,59 @@
+---
+layout: default
+---
+{%- assign series = site.posts | reverse -%}
+{%- assign current = 0 -%}
+{%- for p in series -%}{%- if p.url == page.url -%}{%- assign current = forloop.index -%}{%- endif -%}{%- endfor -%}
+{%- assign no = page.no | default: current -%}
+{%- capture prefix -%}[데이패스 #{{ no }}]{%- endcapture -%}
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | remove: prefix | strip | escape }}</h1>
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y. %m. %d." }}</time>
+      {%- if site.author %}
+      <span>{{ site.author | escape }}</span>
+      {%- endif %}
+    </p>
+    <p class="post-chips">
+      <span class="chip">개발일지 {{ no }}편</span>
+      {%- for t in page.tags %}
+      <span class="chip">{{ t | escape }}</span>
+      {%- endfor %}
+    </p>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <footer class="post-footer">
+    <div class="profile">
+      <span class="profile-mark" aria-hidden="true"></span>
+      <div>
+        <p class="profile-name">{{ site.author | default: site.title | escape }}</p>
+        <p class="profile-desc">{{ site.description | escape }}</p>
+      </div>
+    </div>
+    {%- if page.tags.size > 0 %}
+    <p class="hashtags">
+      {%- for t in page.tags %}
+      <span>#{{ t | replace: " ", "" | escape }}</span>
+      {%- endfor %}
+    </p>
+    {%- endif %}
+    <a class="back-to-list" href="{{ "/" | relative_url }}">목록으로 돌아가기</a>
+    <nav class="post-nav" aria-label="이전 글과 다음 글">
+      {%- if page.previous %}
+      {%- capture pp -%}[데이패스 #{{ page.previous.no | default: 0 }}]{%- endcapture %}
+      <a class="post-nav-prev" href="{{ page.previous.url | relative_url }}"><span class="visually-hidden">이전 글: </span>{{ page.previous.title | remove: pp | strip | escape }}</a>
+      {%- else %}
+      <span></span>
+      {%- endif %}
+      {%- if page.next %}
+      {%- capture pp -%}[데이패스 #{{ page.next.no | default: 0 }}]{%- endcapture %}
+      <a class="post-nav-next" href="{{ page.next.url | relative_url }}"><span class="visually-hidden">다음 글: </span>{{ page.next.title | remove: pp | strip | escape }}</a>
+      {%- endif %}
+    </nav>
+  </footer>
+</article>

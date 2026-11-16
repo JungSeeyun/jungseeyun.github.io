@@ -1,6 +1,9 @@
 ---
 layout: post
 title: "[데이패스 #1] 주제 제안: 자격증 공부, 하루 한 칸씩"
+no: 1
+tags: [기획]
+description: "처음엔 학과 취업 로드맵을 생각했는데, 교수님 피드백을 듣고 내 일정에 맞춘 자격증 공부 스케줄러로 바꿨다."
 date: 2026-11-02
 categories: [project]
 ---

@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<section class="home">
+  <h1 class="home-title">{{ site.title | escape }}</h1>
+  {%- if page.intro %}
+  <p class="home-intro">{{ page.intro | escape }}</p>
+  {%- endif %}
+
+  <ul class="post-list">
+    {%- for p in site.posts %}
+    {%- capture pp -%}[데이패스 #{{ p.no | default: 0 }}]{%- endcapture %}
+    <li>
+      <a href="{{ p.url | relative_url }}">
+        <h2 class="post-list-title">{{ p.title | remove: pp | strip | escape }}</h2>
+        {%- if p.description %}
+        <p class="post-list-desc">{{ p.description | escape }}</p>
+        {%- endif %}
+        <p class="post-list-meta">
+          <time datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date: "%Y. %m. %d." }}</time>
+          {%- if p.no %}
+          <span class="chip">개발일지 {{ p.no }}편</span>
+          {%- endif %}
+          {%- for t in p.tags %}
+          <span class="chip">{{ t | escape }}</span>
+          {%- endfor %}
+        </p>
+      </a>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+
+{{ content }}
